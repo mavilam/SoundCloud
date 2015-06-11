@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   SC.initialize({
     client_id: "2ebf02e8445da1990e55df28295ec4f3",
-   redirect_uri: "http://connect.soundcloud.com/examples/callback.html"
+   redirect_uri: "http://mavilam.github.io/SoundCloud/redirect.html"
   });
 
   $("#connect").on("click", function(){
