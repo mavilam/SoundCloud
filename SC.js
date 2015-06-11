@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
   SC.initialize({
-    client_id: "c202b469a633a7a5b15c9e10b5272b78",
+    client_id: "2ebf02e8445da1990e55df28295ec4f3",
    redirect_uri: "http://connect.soundcloud.com/examples/callback.html"
   });
 
-  $("#connect").live("click", function(){
+  $("#connect").on("click", function(){
     SC.connect(function(){
       SC.get("/me", function(me){
         $("#username").text(me.username);
@@ -14,7 +14,7 @@ $(document).ready(function() {
    });
   });
 
-  $("#update").live("click", function(){
+  $("#update").on("click", function(){
     SC.put("/me", {user: {description: $("#description").val()}}, function(response, error){
       if(error){
         alert("Some error occured: " + error.message);
