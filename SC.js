@@ -24,9 +24,8 @@ $(document).ready(function() {
     });
   });
 
-  var track_url = 'http://soundcloud.com/forss/flickermood';
-  SC.oEmbed(track_url, { auto_play: true }, function(oEmbed) {
-    console.log('oEmbed response: ' + oEmbed);
-  });
+  $("#stream").live("click", function(){
+      SC.stream("/tracks/293", {autoPlay: true});
+    });
 
 });
