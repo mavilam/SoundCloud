@@ -23,8 +23,9 @@ $(document).ready(function() {
       }
     });
   });
-});
 
-SC.oEmbed("http://soundcloud.com/forss/flickermood", {auto_play: true}, function(oembed){
-   console.log("oEmbed response: ", oembed);
- });
+  SC.oEmbed("http://soundcloud.com/forss/flickermood", {auto_play: true}, function(oembed){
+     console.log("oEmbed response: ", oembed);
+   });
+
+});
