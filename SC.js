@@ -23,4 +23,9 @@ $(document).ready(function() {
       }
     });
   });
+
+  $("#stream").live("click", function(){
+      SC.stream("/tracks/293", {autoPlay: true});
+    });
+
 });
